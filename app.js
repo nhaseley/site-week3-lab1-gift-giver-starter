@@ -12,9 +12,8 @@ app.get("/", (req, res) =>{
 })
 
 
-app.get("/hi", (req, res) =>{
-    res.status(201).json("HELLOOOOO")
-})
+
+
 
 // const router = express.Router()
 const giftExchange = require("./routes/gift-exchange");

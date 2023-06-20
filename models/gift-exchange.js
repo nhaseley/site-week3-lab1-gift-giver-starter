@@ -1,3 +1,14 @@
+const express = require("express")
+const router = express.Router()
+
+router.post("/pairsPerformance", (req, res) => {
+    res.status(200).json(pairs(req.body.names)) // success status response code
+})
+router.post("/traditionalPerformance", (req, res) => {
+    res.status(200).json(traditional(req.body.names)) // success status response code
+})
+
+
 class GiftExchange{
     static pairs(names){
         if (names.length % 2 != 0){ // number of names is odd
