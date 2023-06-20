@@ -12,29 +12,13 @@ app.get("/", (req, res) =>{
 })
 
 
+app.get("/hi", (req, res) =>{
+    res.status(201).json("HELLOOOOO")
+})
 
-// const router = express.Router();
+// const router = express.Router()
+const giftExchange = require("./routes/gift-exchange");
+app.use(`/gift-exchange`, giftExchange)
 
-
-// const namesArray = require("./gift-exchange");
-// // const router = express.Router()
-
-// router.post("/pairs", (req, res) => {
-//     res.status(200).json(req.body.names) // success status response code
-// })
-
-// router.post("/traditional", (req, res) => {
-//     res.status(200).json(req.body.names) // success status response code
-// })
-
-// router.post("/users", (req, res) => {
-//   // const user = req.body;
-//   // const newUser = namesArray;
-//   res.status(201).json(namesArray) // success status response code
-// })
 
 module.exports = app;
-
-// const router = express.Router();
-
-// const userModel = require("../models/users");
