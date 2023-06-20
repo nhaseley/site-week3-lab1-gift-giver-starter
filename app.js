@@ -11,13 +11,10 @@ app.get("/", (req, res) =>{
     res.status(201).json(pingPong)
 })
 
-
-
-
-
-// const router = express.Router()
 const giftExchange = require("./routes/gift-exchange");
 app.use(`/gift-exchange`, giftExchange)
 
-
 module.exports = app;
+
+
+// next(new NotFoundError("NOT FOUND!", 404))
