@@ -21,4 +21,8 @@ class NotFoundError extends ExpressError{
         this.status = 404
     }
 }
-module.exports = Error //?
+module.exports = {
+    ExpressError,
+    NotFoundError,
+    BadRequestError
+}

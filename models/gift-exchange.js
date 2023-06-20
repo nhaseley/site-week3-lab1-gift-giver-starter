@@ -1,4 +1,3 @@
-const Errors = require("./utils/errors") // importing errors
 
 class GiftExchange{
     static pairs(names){
